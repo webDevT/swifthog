@@ -1,0 +1,484 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+	/**/
+	//start global style 
+	h1 
+		font-size: 3.75vw
+		line-height: 4.6vw
+	h2 
+		font-size: 3.3335vw
+		line-height: 1
+	h3 
+		font-size: 2.8vw
+	.button 
+		border-radius: 7vw
+	//end global style
+	.header__leng,
+	.sign-in,
+	.button--register
+		display: none
+	.search-link
+		margin-right: 5.5555vw
+		img 
+			width: 2.5vw
+	.header 
+		height: 9.722vw
+	.menu-btn
+		cursor: pointer
+	.menu-row
+		width: 2.0835vw
+		height: 0.278vw
+		background: #fff
+		margin-bottom: 0.5555vw
+		transition: all 0.5s
+	.menu-row:last-child 
+		margin-bottom: 0
+	.menu-btn.active 
+		.menu-row:last-child 
+			display: none
+		.menu-row:first-child 
+			transform: rotate(45deg)
+			margin-bottom: 0
+			position: relative 
+			top: 0.25vw
+		.menu-row:nth-child(2) 
+			transform: rotate(-45deg)
+	.header__menu
+		display: none
+		z-index: 99999
+	.logo
+		img 
+			width: 16.25vw
+	.header .header__menu
+		position: fixed
+		width: 100%
+		background: #fff
+		left: 0
+		top: 9.722vw
+		height: auto
+		padding-top: 5.861vw
+		box-shadow: 0px 4px 16px rgba(10, 31, 68, 0.1)
+		z-index: 9999
+		ul 
+			flex-direction: column
+			height: auto
+
+			li 
+				height: auto
+				display: flex 
+				justify-content: center
+				margin-left: 0
+				margin-bottom: 3.75vw
+		a 
+			color: $black
+			height: auto
+			font-size: 2.22vw
+			width: auto
+			display: inline-block
+			padding-bottom: 1.35vw
+		a:before 
+			height: 0.31vw
+	.container-fluid 
+		width: 88.889vw
+		padding-left: 0 
+		padding-right: 0
+	.menu-item__mobile
+		display: block
+	//start main screen style 
+	.main-screen 
+		padding-top: 16vw
+		background-position: center
+		padding-bottom: 3.75vw
+		h1 
+			max-width: 45%
+	.search-wrapper
+		width: 100%
+		padding: 1.8vw 2.75vw
+		border-radius: 1.35vw
+		position: relative 
+		margin-bottom: 10vw
+		.button-search 
+			position: absolute
+			bottom: -3.2vw
+			left: 0
+			transform: translateY(100%)
+			width: 100%
+			height: 6.387vw
+			font-size: 2.361vw
+	.search-label
+		font-size: 1.8vw
+		margin-bottom: 0.5vw
+	.search-input
+		font-size: 2.222vw
+	//end main screen
+
+	//start categories section
+	.categories-section
+		padding-top: 5.5
+		padding-bottom: 4.15vw
+	.firearm-name
+		font-size: 2.5vw
+	.text 
+		font-size: 1.9445vw
+	.categories-item-arrow
+		width: 3vw
+	.categories-section__item
+		margin-bottom: 2.1vw
+		min-height: 11.111vw
+		border-radius: 1.3vw
+		padding: 2.2vw 2.6vw
+	.categories-section__items
+		margin-top: 2.1vw
+	//end categories section
+	.section-header__link
+		font-size: 2.222vw
+	.section-header
+		padding-bottom: 2.1vw
+	.product-item .product-photo
+		width: 70%
+	.product-item
+		padding-top: 1.8vw
+		padding-bottom: 2.8vw
+	.product-item__content
+		padding: 2.05vw
+		padding-bottom: 1.35vw
+	.product-item__footer
+		padding-left: 2.05vw
+		padding-right: 2.05vw
+		padding-top: 2.05vw
+	.category-name
+		font-size: 1.9vw
+	.product-item__footer .text-orange
+		font-size: 2.05vw
+	.view-product img
+		height: 1.1vw
+		margin-left: 0.75vw
+	.product-item__review img
+		width: 2vw
+		position: relative 
+		top: -0.25vw
+	.review-value
+		margin: 0 1vw
+	.prev img,
+	.next img
+		width: 1.7vw
+	.product-item
+		max-width: 27vw
+		margin: 0 auto
+	.featured
+		padding-bottom: 4.3vw
+	.popular-product .row .col
+		width: 33.3% !important
+		max-width: 33.3% !important
+		min-width: 33.3% !important
+		margin-bottom: 4.722vw
+		margin-bottom: 2.36vw
+		.product-item
+			margin: 0 auto
+			max-width: 27vw
+	.popular-product
+		.col:nth-child(6)
+			display: block
+	.product-item .product-photo
+		display: block 
+		margin: 0 auto
+	.hide-row
+		margin-top: 0
+	.load-more-button
+		margin-top: 1.8vw
+		width: 50%
+		max-width: 50%
+		font-size: 2.2vw
+		height: 6.7vw
+		border-radius: 1.36vw
+	.popular-product
+		padding-bottom: 5.5vw
+
+
+	.footer__text
+		font-size: 2.2vw
+		margin-top: 0.6vw
+		margin-bottom: 2.6vw
+	.footer-form
+		width: 37vw
+		height: 5.4vw
+		border-radius: 0.6vw
+		input[type="text"]
+			font-size: 2.2vw
+			background-size: 2.05vw
+			background-position: left 2.05vw center
+			padding-left: 5.1vw
+			width: 27vw
+		input[type="submit"]
+			font-size: 2.2vw
+			width: 8.2vw
+			height: 2.35vw
+			padding-left: 2.05vw
+	.footer-social
+		margin-top: 2.6vw
+		margin-bottom: 4.15vw
+		a
+			margin-right: 1.35vw
+		img 
+			width: 4.15vw
+	.footer-menu
+		font-size: 2.5vw
+
+			
+
+
+
+
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	//start global style 
+	h1 
+		font-size: 7.500vw
+		line-height: 9vw
+	h2 
+		font-size: 6.667vw
+	h3 
+		font-size: 5.556vw
+	.button 
+		border-radius: 13.889vw
+
+
+	//end global style
+	.search-link
+		margin-right: 11.111vw
+		img 
+			width: 5vw
+	.header 
+		height: 19.444vw
+	.menu-row
+		width: 4.167vw
+		height: 0.556vw
+		margin-bottom: 1.111vw
+	.menu-btn.active 
+		.menu-row:first-child 
+			top: 0.5vw
+	.logo
+		img 
+			width: 32.500vw
+	.header .header__menu
+		top: 19.444vw
+		padding-top: 11.722vw
+		ul 
+			li 
+				margin-bottom: 7.500vw
+		a 
+			font-size: 4.444vw
+			padding-bottom: 2.750vw
+		a:before 
+			height: 0.625vw
+	//start main scrieen 
+	.main-screen 
+		padding-top: 32vw
+		background: url('../images/mobil-bg.png')
+		background-position: center
+		background-size: cover
+		padding-bottom: 7.5vw
+		
+		h1 
+			max-width: 95%
+	.search-wrapper
+		padding: 3.611vw 5.556vw
+		border-radius: 2.778vw
+		margin-bottom: 19.167vw
+		.button-search 
+			bottom: -6.389vw
+			height: 12.778vw
+			font-size: 4.722vw
+	.search-label
+		font-size: 3.611vw
+		margin-bottom: 1vw
+	.search-input
+		font-size: 4.444vw
+	//end main screen
+	.header 
+		background: $black
+	.header.sticky 
+		background: rgba(#000, 0.55)
+	//start categories section 
+	.categories-section
+		padding-top: 11.111vw
+		padding-bottom: 8.333vw
+	.firearm-name
+		font-size: 5vw
+	.text 
+		font-size: 3.889vw
+	.categories-item-arrow
+		width: 5vw
+	.categories-section__item
+		margin-bottom: 4.167vw
+		min-height: 21.111vw
+		border-radius: 2.778vw
+		padding: 4.444vw 5.556vw
+		box-shadow: 0px 4px 16px rgba(10, 31, 68, 0.1)
+	.categories-section__items
+		margin-top: 4.167vw
+	.section-header__link
+		font-size: 4.444vw
+	.section-header
+		padding-bottom: 4.167vw
+	.product-item
+		padding-top: 3.611vw
+		border-radius: 2.778vw
+		padding-bottom: 5.278vw
+	.product-item__content
+		padding: 4.167vw
+		padding-bottom: 2.778vw
+	.product-item__footer
+		padding-left: 4.167vw
+		padding-right: 4.167vw
+		padding-top: 4.167vw
+	.category-name
+		font-size: 3.889vw
+	.product-item__footer .text-orange
+		font-size: 4.167vw
+	.view-product img
+		height: 2.222vw
+		margin-left: 1.5vw
+	.product-item__review img
+		width: 4vw
+		position: relative 
+		top: -0.5vw
+	.review-value
+		margin: 0 2vw
+	.prev img,
+	.next img
+		width: 3.333vw
+	.product-item
+		max-width: 72.778vw
+		margin: 0 auto
+	.featured
+		padding-bottom: 8.611vw
+
+	.popular-product .row .col
+		width: 50% !important
+		max-width: 50% !important
+		min-width: 50% !important
+		margin-bottom: 4.722vw
+		margin-bottom: 4.722vw
+		.product-item
+			margin: 0 auto
+			max-width: 100%
+	.popular-product
+		padding-bottom: 11.111vw
+		.col:nth-child(6)
+			display: block
+	.popular-product .product-item__content-footer
+		flex-direction: column 
+		align-items: flex-start
+	.load-more-button
+		margin-top: 3.611vw
+		width: 100%
+		max-width: 100%
+		font-size: 4.444vw
+		height: 13.333vw
+		border-radius: 2.778vw
+	.footer__text
+		font-size: 4.444vw
+		margin-top: 1.389vw
+		margin-bottom: 5.278vw
+	.footer-form
+		width: 73.611vw
+		height: 10.833vw
+		border-radius: 1.111vw
+		input[type="text"]
+			font-size: 4.444vw
+			background-size: 4.167vw
+			background-position: left 4.167vw center
+			padding-left: 10.278vw
+			width: 57.222vw
+		input[type="submit"]
+			font-size: 4.444vw
+			width: 16.389vw
+			height: 4.722vw
+			padding-left: 4.167vw
+	.footer-social
+		margin-top: 5.278vw
+		margin-bottom: 8.333vw
+		a
+			margin-right: 2.778vw
+		img 
+			width: 8.333vw
+	.footer-menu
+		font-size: 4.9vw
+		.col-4:nth-child(2)
+			padding-left: 0
+		.col-4:nth-child(3)
+			padding-left: 1vw
+		a 
+			margin-bottom: 2vw
+	.footer-menu .footer__menu-title
+		margin-bottom: 4vw
+	
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+

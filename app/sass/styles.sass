@@ -1,0 +1,517 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: "Knockout-HTF30-JuniorWelterwt", sans-serif
+	font-weight: 500
+	background: #FCFCFD
+h1,
+h2,
+h3,
+h4,
+h5 
+	font-weight: 500 
+	margin-bottom: 0
+h1 
+	font-size: 3.056vw
+h2 
+	font-size: 1.944vw
+	color: $text-a
+	font-size: 1.806vw
+.container-fluid 
+	width: 86.806vw
+ul 
+	padding-left: 0
+	list-style: none
+	margin-bottom: 0
+a,
+a:hover 
+	text-decoration: none
+.button 
+	background: $orange
+	height: 2.917vw
+	display: flex 
+	align-items: center
+	justify-content: center
+	border-radius: 3.472vw
+	cursor: pointer
+	transition: all .5s
+	a 
+		height: 100%
+		display: flex 
+		align-items: center 
+		justify-content: center 
+		color: #fff
+.firearm-name
+	font-size: 1.458vw
+.button:hover 
+	background: rgba($orange, 0.9) 
+.category-name
+	color: $text-c
+	font-size: 1.111vw
+//end global style
+
+//start header style
+.header 
+	background: rgba(#000, 0.55)
+	color: #fff
+	font-size: 1.250vw
+	overflow: hidden
+	height: 5vw
+	position: fixed
+	width: 100%
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03)
+	z-index: 9999
+	transition: all 0.5s
+	a 
+		color: #fff
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		height: 100%
+.logo
+	img 
+		width: 7.083vw
+.header__left
+	display: flex
+	align-items: center
+	height: 100%
+.header__menu
+	height: 100%
+	ul 
+		display: flex
+		height: 100% 
+		li 
+			height: 100% 
+			margin-left: 4.167vw
+			a 
+				height: 100%
+				display: flex
+				align-items: center				
+				position: relative
+			a:before 
+				content: ''
+				width: 0 
+				bottom: -1px 
+				left: -1% 
+				height: 0.347vw
+				position: absolute
+				background: $orange
+				transition: all .5s
+			a:hover:before,
+			a.active:before
+				width: 102%
+.header__right 
+	display: flex
+	align-items: center
+.search-link
+	margin-right: 2.917vw
+	img 
+		width: 1.250vw
+.header__leng
+	position: relative
+	select
+		appearance: none
+		width: 2.828vw
+		outline: none
+		cursor: pointer
+		background: transparent
+		color: #fff
+		background: transparent
+		border: none
+		option
+			background: $black
+
+
+
+.header__leng img
+	position: absolute 
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	width: 0.469vw
+.sign-in 
+	margin-left: 4.190vw
+	margin-right: 3.104vw
+	cursor: pointer
+.button--register
+	width: 8.819vw
+.menu-item__mobile
+	display: none
+.text 
+	font-size: 1.111vw
+//end header style
+
+//start main screen 
+.main-screen
+	background: url('../images/header-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 12.361vw
+	padding-bottom: 7.083vw
+	color: #fff
+.search-wrapper
+	width: 45.486vw
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	background: rgba(#000, 0.55)
+	padding: 0.972vw 1.042vw
+	box-shadow: 0px 0.278vw 1.111vw rgba(10, 31, 68, 0.1)
+	margin-top: 1.806vw
+	border-radius: 0.694vw
+.button-search
+	font-size: 1.389vw
+	width: 11.389vw
+.search-label
+	font-size: 1.042vw 
+	font-weight: 500
+	line-height: 1
+.search-input
+	width: 30vw
+	font-size: 1.250vw
+	font-weight: 500
+	color: #fff
+	background: transparent
+	border: none
+	outline: none
+	padding-left: 0
+.search-input::placeholder 
+	color: #fff
+.search-input:focus::placeholder
+	color: transparent
+//end main screen
+
+//start slick style
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+.slick-list:focus
+	outline: none
+.slick-list.dragging
+	cursor: pointer
+	cursor: hand
+.slick-slider .slick-track,
+.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+.slick-track:before,
+.slick-track:after
+	display: table
+	content: ''
+.slick-track:after
+	clear: both
+.slick-loading .slick-track
+	visibility: hidden
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+[dir='rtl'] .slick-slide
+	float: right
+.slick-slide img
+	display: block
+.slick-slide.slick-loading img
+	display: none
+.slick-slide.dragging img
+	pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+.slick-arrow.slick-hidden
+	display: none
+//end slick style
+
+//start categories section style
+.categories-section
+	padding-top: 2.986vw
+	padding-bottom: 3.264vw
+
+.categories-section__items
+	margin-top: 1.181vw
+.categories-section__item
+	width: 100%
+	min-height: 6.667vw
+	display: block
+	border-radius: 0.694vw
+	color: #fff
+	padding: 1.736vw 1.389vw
+	display: flex 
+	align-items: center 
+	justify-content: space-between
+	transition: all 0.5s
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1)
+.categories-section__item:hover 
+	color: #fff
+	img 
+		transform: translateX(0.2vw)
+.categories-section__item--small-firearms
+	background-image: linear-gradient(242.94deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 100%), url('../images/category1.png')
+	background-size: cover
+
+.categories-item__left
+	span 
+		display: block
+.categories-item-arrow
+	width: 1.215vw
+	transition: all .5s
+.categories-section__item--assault-rifle
+	background-image: linear-gradient(242.94deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 100%), url('../images/category2.png')
+	background-size: cover
+.categories-section__item--machine-gun
+	background-image: linear-gradient(242.94deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 100%), url('../images/category3.png')
+	background-size: cover
+.categories-section__item--submachine-gun
+	background-image: linear-gradient(242.94deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 100%), url('../images/category4.png')
+	background-size: cover
+.section-header
+	display: flex 
+	justify-content: space-between
+	align-items: flex-end
+	padding-bottom: 1.389vw
+.section-header__link
+	color: $orange
+	font-size: 1.250vw
+	text-decoration: underline
+.section-header__link:hover 
+	text-decoration: underline 
+	color: $orange
+//end categories section style
+
+//start features section style 
+.featured
+	padding-bottom: 2.431vw
+.product-item
+	display: block
+	margin: 0 0.625vw
+	border: 1px solid #F5F5F5
+	box-sizing: border-box
+	box-shadow: 0px 2px 14px #F4F4F4
+	border-radius: 0.694vw
+	overflow: hidden
+	padding-top: 1.042vw
+	padding-bottom: 1.042vw
+	outline: none
+	background: #fff
+	.product-photo
+		width: 13.611vw
+		margin: 0 auto
+		margin-bottom: 0.8vw
+.product-item__content
+	border-top: 1px solid #F5F5F5
+	border-bottom: 1px solid #F5F5F5
+	display: block
+	padding: 0 1.042vw
+	padding-top: 0.694vw 
+	padding-bottom: 1.181vw
+	display: flex 
+	flex-direction: column
+	.firearm-name
+		color: $text-a
+.product-item__price
+	color: $text-a
+.product-item__price
+	display: flex 
+	justify-content: space-between
+.product-item__content-footer
+	display: flex 
+	justify-content: space-between
+	align-items: center
+.product-item__review
+	display: flex
+	align-items: center
+	img 
+		width: 0.903vw
+.review-value
+	color: $text-a
+	margin: 0 0.486vw
+.review-quantity
+	color: $text-c
+.product-item__footer
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	padding: 0 1.042vw
+	padding-top: 0.903vw
+	.text 
+		color: $text-a
+	.text-orange
+		color: $orange
+.view-product
+	display: flex 
+	align-items: center 
+	img 
+		margin-left: 0.3vw
+		transition: all 0.5s
+		height: 0.694vw
+.view-product:hover 
+	img 
+		transform: translateX(0.1vw)
+.prev,
+.next 
+	cursor: pointer
+	img 
+		width: 0.833vw
+.slider-wrapper
+	position: relative
+.prev
+	position: absolute 
+	top: 50% 
+	left: -2.083vw
+	transform: translateY(-50%) 
+.next
+	position: absolute 
+	top: 50% 
+	right: -2.083vw
+	transform: translateY(-50%) 
+//end featured
+
+//start popular product style
+.popular-product
+	padding-bottom: 4.167vw
+	.row 
+		margin-left: 0 
+		margin-right: 0
+	.col
+		padding-left: 0 
+		padding-right: 0
+		padding: 0 0.625vw
+	.col:nth-child(6)
+		display: none
+	.product-item
+		margin-left: 0 
+		margin-right: 0
+	.hide-row
+		display: none
+.load-more-button
+	color: $orange
+	font-size: 1.389vw
+	text-align: center
+	margin: 0 auto
+	margin-top: 3.472vw
+	background: #FFFFFF
+	border: 1px solid #EEEEEE
+	border-radius: 0.694vw
+	max-width: 24.861vw
+	height: 3.333vw
+	display: flex 
+	align-items: center 
+	justify-content: center
+	cursor: pointer
+.hide-row
+	margin-top: 1.5vw
+//end popylar product style
+
+//start footer
+.footer
+	background: #F9F9F9
+	padding-top: 2.500vw
+	padding-bottom: 2.361vw
+.footer__text
+	font-size: 1.250vw
+	line-height: 1.2
+	color: $text-b
+	margin-bottom: 1.042vw
+.footer-form
+	background: #FFFFFF
+	width: 18.403vw
+	height: 2.708vw
+	border-radius: 0.278vw
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	input 
+		height: 100%
+	input[type="text"]
+		background: transparent 
+		background-image: url('../images/mail.svg')
+		background-repeat: no-repeat
+		background-size: 1.042vw
+		background-position: left 1.042vw center
+		padding-left: 2.569vw
+		font-size: 1.111vw
+		width: 14.306vw
+		border: none
+		outline: none
+		padding-top: 0.15vw 
+		padding-bottom: 0
+
+
+	input::placeholder
+		color: #999FAE
+	input:focus::placeholder
+		color: transparent
+
+	input[type="submit"]
+		width: 4.097vw
+		height: 1.181vw
+		display: flex 
+		align-items: center
+		border: none
+		background: transparent
+		border-left: 1px solid #E3E6E9
+		padding-left: 1.042vw
+		font-size: 1.111vw
+		line-height: 1.2
+		color: $orange
+		cursor: pointer
+.footer-social
+	margin-top: 1.042vw
+	display: flex
+	a 
+		display: block
+		margin-right: 0.694vw
+	img 
+		width: 2.083vw
+.footer-menu
+	font-size: 1.250vw
+	a 
+		display: block
+		color: $text-a
+		margin-bottom: 1.2vw
+.footer__menu-title
+	color: #999FAE	
+	margin-bottom: 1.528vw
+
+
+
+//end footer
+
+@import "media"
+
+
+
