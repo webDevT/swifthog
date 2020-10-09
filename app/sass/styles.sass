@@ -6,6 +6,7 @@ body
 	font-family: "Knockout-HTF30-JuniorWelterwt", sans-serif
 	font-weight: 500
 	background: #FCFCFD
+	position: relative
 h1,
 h2,
 h3,
@@ -50,6 +51,35 @@ a:hover
 .category-name
 	color: $text-c
 	font-size: 1.111vw
+.checkbox
+	display: flex 
+	align-items: center
+	label 
+		margin-bottom: 0
+	input[type="checkbox"] 
+		display: none
+	.checkbox-label 
+		height: 1.111vw 
+		width: 1.111vw
+		border: 1px solid #C4C4C4
+		border-radius: 0.139vw
+		cursor: pointer
+.checkbox
+	input[type="checkbox"]:checked + .checkbox-label
+		background: #C4C4C4
+		position: relative
+	input[type="checkbox"]:checked + .checkbox-label:before 
+		content: ''
+		height: 100%
+		width: 100%
+		background: url('../images/check.svg')
+		background-size: 85%
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute 
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
 //end global style
 
 //start header style
@@ -507,11 +537,144 @@ a:hover
 	color: #999FAE	
 	margin-bottom: 1.528vw
 
-
-
 //end footer
 
+//start popup
+.popup 
+	position: fixed
+	top: 0 
+	left: 0 
+	width: 100%
+	min-height: 100%
+	background: rgba(0, 0, 0, 0.35)
+	background-blend-mode: darken
+	z-index: 9999
+	overflow-y: scroll
+	height: 100vh
+	display: none	
+
+.popup-content 
+	width: 36.319vw
+	background: url('../images/reg-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	height: 100%
+	position: absolute 
+	right: 0
+	top: 0
+	min-height: 75vw
+	padding: 9.028vw 7.569vw 10.347vw 4.861vw
+	transform: translateX(150%)
+	transition: all 0.75s
+.popup.active 
+	.popup-content 
+		transform: translateX(0)
+.popup::-webkit-scrollbar
+	width: 0
+.popup 
+	-ms-overflow-style: none
+.popup 
+	overflow: -moz-scrollbars-none
+.logo-reg
+	margin-bottom: 1.458vw
+	img 
+		width: 14.931vw
+.popup-form__header
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	padding-bottom: 2.778vw
+	img 
+		width: 2.222vw
+.popup-title
+	color: #fff
+	font-size: 2.778vw
+.popup__form
+	input 
+		display: block
+		width: 100%
+		height: 3.333vw
+		background: rgba(0, 0, 0, 0.55)
+		border-radius: 0.278vw
+		border: none
+		margin-bottom: 0.556vw
+		padding-left: 1.312vw
+		color: #fff
+		font-size: 1.111vw
+		outline: none
+	input::placeholder 
+		color: #fff 
+	input:focus::placeholder 
+		color: transparent
+	.form-button
+		background: $orange
+		font-size: 1.250vw
+		border-radius: 3.472vw
+		margin-top: 2.153vw
+
+.close 
+	cursor: pointer
+.password
+	position: relative
+.password-control
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: 1.250vw
+	display: inline-block
+	width: 1.8vw
+	height: 1.389vw
+	background: url('../images/eye.svg') 0 0 no-repeat
+	background-size: 1.667vw
+	background-position: center
+.password-control.view
+	background: url('../images/eye-open.svg') 0 0 no-repeat
+	background-position: left 0.2vw center
+.form-footer
+	font-size: 1.111vw
+	color: #fff
+	padding-top: 0.556vw
+	display: flex 
+	justify-content: space-between
+	
+	a 
+		color: #fff
+.label-text
+	margin-left: 0.486vw
+	cursor: pointer
+.or 
+	margin: 2.083vw 0
+	text-align: center
+	color: #fff
+	font-size: 1.111vw
+.popup__social-items
+	display: flex
+	flex-direction: column
+	align-items: center
+.popup__social
+	display: flex
+	align-items: center
+	color: #fff
+	font-size: 1.111vw
+	margin-bottom: 1.389vw
+	img 
+		width: 1.667vw
+		margin-right: 0.694vw
+.popup__social:hover 
+	color: #fff
+.popup__footer
+	text-align: center 
+	color: #fff
+	margin-top: 7.431vw
+	font-size: 1.111vw
+	.sign-up__btn
+		color: #fff
+		padding-left: 0.25vw
+		border-bottom: 1px solid $orange
+		cursor: pointer
+
 @import "media"
+
 
 
 
