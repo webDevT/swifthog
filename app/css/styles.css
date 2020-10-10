@@ -1844,6 +1844,85 @@ a:hover {
   margin-left: 7.986vw;
 }
 
+.about {
+  padding-top: 4.167vw;
+  font-size: 1.389vw;
+  padding-bottom: 5vw;
+  color: #646464;
+}
+
+.about h1,
+.about .about__title {
+  color: #383838;
+}
+
+.about .container-fluid {
+  width: 63.889vw;
+}
+
+.about p,
+.about .about__sub-text {
+  margin-bottom: 2.083vw;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about__title {
+  font-size: 2.500vw;
+}
+
+.categories {
+  padding-top: 4.306vw;
+}
+
+.categories .categories-section {
+  padding-top: 1.5vw;
+}
+
+.categories h1 {
+  padding-bottom: 1.5vw;
+}
+
+.categories .container-fluid {
+  width: 63.889vw;
+}
+
+.categories__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #E4E4E4;
+  margin-bottom: 0vw;
+}
+
+.categories__tab {
+  margin-right: 3.472vw;
+  font-size: 1.250vw;
+  color: #646464;
+  padding-bottom: 0.208vw;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+
+.categories__tab.active {
+  border-bottom: 2px solid #ED652E;
+}
+
+.categories .categories-section__item {
+  margin-bottom: 1.736vw;
+}
+
+.categories__tab-item {
+  display: none;
+}
+
+.categories__tab-item:first-child {
+  display: block;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2638,6 +2717,37 @@ a:hover {
   .footer {
     padding-top: 6vw;
   }
+  .about {
+    padding-top: 5.5vw;
+    font-size: 2.2vw;
+    padding-bottom: 5vw;
+  }
+  .about .container-fluid {
+    width: 88.889vw;
+  }
+  .about p,
+  .about .about__sub-text {
+    margin-bottom: 2vw;
+  }
+  .about img {
+    margin-bottom: 2vw;
+  }
+  .about .about__title {
+    font-size: 3.3vw;
+  }
+  .categories {
+    padding-top: 5.5vw;
+  }
+  .categories h1 {
+    margin-bottom: 3.5vw;
+  }
+  .categories .container-fluid {
+    width: 88.889vw;
+  }
+  .categories__tab {
+    font-size: 2.2vw;
+    margin-right: 5.1vw;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -3230,6 +3340,34 @@ a:hover {
   }
   .footer {
     padding-top: 12vw;
+  }
+  .about {
+    padding-top: 11.111vw;
+    font-size: 4.444vw;
+    padding-bottom: 10vw;
+  }
+  .about .container-fluid {
+    width: 88.889vw;
+  }
+  .about p,
+  .about .about__sub-text {
+    margin-bottom: 4.167vw;
+  }
+  .about img {
+    margin-bottom: 4.167vw;
+  }
+  .about .about__title {
+    font-size: 6.667vw;
+  }
+  .categories {
+    padding-top: 11.111vw;
+  }
+  .categories h1 {
+    margin-bottom: 6.944vw;
+  }
+  .categories__tab {
+    font-size: 4.444vw;
+    margin-right: 10.278vw;
   }
 }
 

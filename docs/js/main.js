@@ -1,3 +1,12 @@
+
+$(function(){
+	$(".categories__tab").click(function() {
+	$(".categories__tab").removeClass("active").eq($(this).index()).addClass("active");
+ 	$(".categories__tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+});
+
+
 $(function(){
 
 
@@ -184,11 +193,15 @@ $("#top").on("click","a", function (event) {
         $('body,html').animate({scrollTop: top}, 1000);
     });
 
+
+
 $(function(){
 	$(".tab").click(function() {
 	$(".tab").removeClass("active").eq($(this).index()).addClass("active");
  	$(".tab__item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 });
+
+
 
 
