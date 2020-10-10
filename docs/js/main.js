@@ -111,9 +111,22 @@ $('.filter-item img').click(function(){
 });
 
 $('.filter-mobile').click(function(){
+	$('.search').toggleClass('active');
+	$("option[value='1']").remove();
+	$(".filter__search-input").attr("placeholder","Search by keyword...");
 	
 	$(".no-selected-filters").slideToggle();
 });
+
+$('.search-close').click(function(){
+	
+	$(".no-selected-filters").hide();
+	$('.search').removeClass('active');
+	$(".filter__search-input").attr("placeholder","Enter keyword...")
+	
+});
+
+
 
 $('.load-more-button--mobile').click(function(){
 	
@@ -147,7 +160,7 @@ $('.header__menu li').click(function(){
 if ($(window).width() < 991 ) {
     $(".filter__search-input").attr("placeholder","Enter keyword...");
 }
-else { $("input[type='email']").attr("placeholder","Search by keyword...");}
+else { $(".filter__search-input']").attr("placeholder","Search by keyword...");}
 //end search placeholder replace
 
 $("#top").on("click","a", function (event) {

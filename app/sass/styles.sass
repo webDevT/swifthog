@@ -723,6 +723,7 @@ a:hover
 		padding-left: 2.500vw
 		font-size: 1.181vw 
 		outline: none
+		background: #fff
 	select
 		margin-bottom: 0.694vw
 		width: 100%
@@ -734,17 +735,22 @@ a:hover
 		outline: none
 		appearance: none
 		cursor: pointer
-		background: url('../images/select-arrow.svg')
+		background: #fff
+		background-image: url('../images/select-arrow.svg')
 		background-repeat: no-repeat
 		background-position: right 0.833vw center
 		background-size: 0.8vw
+		background-repeat: #fff
+
 
 
 	input[type="search"]
-		background: url('../images/search-black.svg')
+		background: #fff
+		background-image: url('../images/search-black.svg')
 		background-repeat: no-repeat
 		background-position: left 1.042vw center
 		background-size: 0.972vw
+		
 	input:focus::placeholder 
 		color: transparent
 .search__title
@@ -860,6 +866,45 @@ a:hover
 
 ::-webkit-resizer
 
+.checkbox__row
+	margin-bottom: 0.694vw
+	width: 100%
+	border: 1px solid #E4E4E4
+	border-radius: 0.278vw
+	height: 2.569vw
+	padding-left: 1.042vw
+	font-size: 1.181vw 
+	outline: none
+	appearance: none
+	cursor: pointer
+	background: #fff
+	background-repeat: #fff
+	display: flex
+	align-items: center
+	.label-text
+		position: relative 
+		top: 0.1vw
+	.label-text
+		margin-left: 0.625vw
+	.checkbox
+		input[type="checkbox"]:checked + .checkbox-label
+			position: relative
+			background: transparent
+		input[type="checkbox"]:checked + .checkbox-label:before 
+			content: ''
+			height: 100%
+			width: 100%
+			background: url('../images/check-orange.svg')
+			background-size: 85%
+			background-repeat: no-repeat
+			background-position: center
+			position: absolute 
+			top: 50%
+			left: 51%
+			transform: translate(-50%, -50%)
+.search-close,
+.button--apply-filter
+	display: none
 
 @import "media"
 
