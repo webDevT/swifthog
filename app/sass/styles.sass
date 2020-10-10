@@ -906,6 +906,177 @@ a:hover
 .button--apply-filter
 	display: none
 
+//start product page style
+.product-page
+	padding-top: 4.167vw
+	.container-fluid 
+		width: 77.083vw
+.product-image
+	width: 100%
+.product-page
+	position: relative
+	.slick-dots
+		display: flex
+		justify-content: center
+		margin-left: 0
+		position: absolute
+		left: 50%
+		bottom: 1.736vw
+		transform: translateX(-50%)
+		li 
+			button 
+				background: transparent
+				border: none
+				font-size: 0
+				outline: none
+				height: 0.347vw
+				width: 0.347vw
+				background: rgba(#fff, 0.5)
+				margin: 0.236vw
+				padding: 0
+				border-radius: 50%
+				cursor: pointer
+				transition: all 0.5s
+		.slick-active
+			button 
+				background: $orange
+				width: 0.694vw
+				border-radius: 1.597vw
+.product-slider-wrapper
+	position: relative
+.prev-arrow
+	position: absolute
+	top: 50%
+	left: 1.667vw
+	cursor: pointer
+	transform: translateY(-50%) translateX(100%)
+.next-arrow
+	position: absolute
+	top: 50%
+	right: 1.667vw
+	cursor: pointer
+	transform: translateY(-50%) translateX(-100%)
+.product-item-title
+	font-size: 3.056vw
+.product-item__bottom
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	font-size: 1.250vw
+	padding-bottom: 1.389vw
+	color: $text-b
+.product-item__bottom-left
+	display: flex 
+	align-items: center
+.product-item__reviews
+	display: flex 
+	align-items: center
+.product-item__bottom-text
+	margin-right: 1.111vw
+.product-item__reviews
+	img 
+		width: 1vw
+		position: relative 
+		top: -0.1vw
+		margin-right: 0.347vw
+.product-item__rev-value
+	color: $text-a
+	margin-right: 0.208vw
+.product__description
+	p 
+		font-size: 1.250vw
+		color: $text-b
+		margin-bottom: 2.431vw
+		line-height: 1.4
+//end product page style
+
+//start retailers style
+.retailers
+	padding: 3.472vw 0
+
+	.container-fluid 
+		width: 77.083vw
+	h2 
+		margin-bottom: 0.556vw
+	.load-more-button
+		margin-top: 1.042vw
+.retailers__row
+	display: flex
+	border-bottom: 1px solid #EEEEEE
+	padding: 1.2vw 1.389vw
+	display: none
+.retailers__row.active 
+	display: flex !important
+.retailers__row:first-child, 
+.retailers__row:nth-child(2),
+.retailers__row:nth-child(3),
+.retailers__row:nth-child(4),
+.retailers__row:nth-child(5)
+	display: flex
+.retailers__col
+	width: 50%
+.retailers__table
+	border: 1px solid #EEEEEE
+	border-radius: 0.694vw
+	overflow: hidden
+	font-size: 1.250vw
+	a 
+		color: $orange
+		text-decoration: underline
+.retailers__col--last
+	display: flex 
+	justify-content: space-between
+.retailers__row--header
+	color: #999999
+	font-size: 1.111vw
+.mobile-text
+	display: none
+.retailers__col--last
+	img 
+		display: none
+//end retailers style
+
+//start discussion style
+.discussion
+	.container-fluid 
+		width: 77.083vw
+.discussion__item
+	border: 1px solid #EEEEEE
+	border-radius: 0.694vw
+	overflow: hidden
+	padding: 1.389vw 0
+	font-size: 1.250vw
+.discussion__item-content
+	padding: 0 1.458vw		
+.discussion__item-user
+	display: flex 
+	align-items: center
+	padding-bottom: 1.042vw
+	img 
+		margin-right: 0.694vw
+		width: 2.222vw
+.discussion__item-footer
+	border-top: 1px solid #EEEEEE
+	padding: 0 1.458vw
+	padding-top: 1.042vw
+	display: flex
+	a 
+		display: flex 
+		align-items: center
+		margin-right: 3.125vw
+		color: $orange
+		span 
+			text-decoration: underline
+		img 
+			margin-right: 0.694vw
+			width: 1.458vw
+.discussion__item
+	margin-bottom: 2.083vw
+.discussion__item--sub
+	margin-left: 7.986vw
+
+//end discussion style
+
 @import "media"
 
 

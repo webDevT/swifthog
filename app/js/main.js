@@ -31,6 +31,15 @@ responsive: [
 	}
 ]
 });
+
+
+
+$('.product-slider').slick({
+slidesToShow: 1,
+prevArrow: $('.prev-arrow'),
+nextArrow: $('.next-arrow'),
+dots: true
+});
 //end slider init
 
 //start mobile menu
@@ -39,6 +48,11 @@ $('.menu-btn').click(function(){
 	$('.header__menu').slideToggle()
 });
 //end mobile menu
+
+$('.load-more-button--table').click(function(){
+	$('.retailers__row').addClass('active');
+});
+
 
 // ------start sticky header------
 
