@@ -1589,6 +1589,8 @@ a:hover {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  list-style: none;
+  padding-left: 0;
 }
 
 .product-page .slick-dots li button {
