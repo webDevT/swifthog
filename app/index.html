@@ -31,50 +31,20 @@
 					<li>
 						<a href="about.html">About</a>
 					</li>
-					<li class="menu-item__mobile">
-						<a class="sign-in-mobile">
-						Sign up</a>
-					</li>
-					<li class="menu-item__mobile">
-						<a class="login-mobile">
-						Login
-						<a href="">
-					</li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="header__right">
-			<a href="search.html" class="search-link">
-				<img src="images/search.svg" alt="">
-			</a>
-
-			<div class="header__leng">
-				<img src="images/down.svg" alt="">
-				<select name="" id="">
-				<option value="">Eng</option>
-				<option value="">Ru</option>
-			</select>
-			</div>
-
-			<div class="sign-in">
-				Sign In
-			</div>
-
-			<div class="button button--register">
-					Register				
-			</div>
-
+			<form action="">
+				<input type="search">
+				<input type="submit" value="">				
+			</form>
 			<div class="menu-btn">
 				<div class="menu-row"></div>
 				<div class="menu-row"></div>
 				<div class="menu-row"></div>
 			</div>
-
-
-
-
-
 			
 		</div>
 	</div>
@@ -86,18 +56,21 @@
 	<div class="container-fluid">
 		<h1>The First Gun Search Engine in the World</h1>
 		<h3>Discover, find, purchase</h3>
-
+<form action="">
 		<div class="search-wrapper">
 			<div class="search-wrapper__content">
 				<div class="search-label">
 					Search by keyword
 				</div>
-				<input class="search-input" type="text" placeholder="Enter keyword...">
+				
+					<input class="search-input" type="text" placeholder="Enter keyword...">
+				
+				
 			</div>
-			<div class="button button-search">
-				<a href="search.html">Search</a>
-			</div>
-		</div>
+			<input type="submit" value="Search" class="button button-search">
+		
+
+		</div></form>
 	</div>
 	
 </div>
@@ -174,7 +147,7 @@
 <!-- end categories section -->
 
 <!-- start featured -->
-<section class="featured">
+<section class="featured" id="featured">
 	<div class="container-fluid">
 		<div class="section-header">
 			<h2>Featured Products</h2>
@@ -575,7 +548,7 @@
 <!-- start featured -->
 
 <!-- start popular -->
-<section class="popular-product featured">
+<section class="popular-product featured" id="popular">
 	<div class="container-fluid">
 		<div class="section-header">
 			<h2>Popular Products</h2>
@@ -1170,9 +1143,9 @@
 
 
 </a>
-							<a href="">Cookies</a>
-							<a href="">Privacy & terms</a>
-							<a href="">Sitemap</a>
+							<a href="terms.html">Terms & Conditions</a>
+							<a href="privacy.html">Privacy & Cookies</a>
+							<a href="sitemap.html">Sitemap</a>
 							
 						</div>
 						<div class="col-4">
@@ -1207,137 +1180,6 @@
 	</div>
 </footer>
 <!-- end footer -->
-
-<!-----start login popup---->
-<div class="popup popup-sign-in" id="login">
-	<div class="popup-content" >
-		<div class="logo-reg">
-			<a href="index.html">
-				<img src="images/logo-reg.svg" alt="">
-			</a>
-		</div>
-		<div class="popup-form__header">
-			<div class="popup-title">
-				Sign In
-			</div>
-			<div class="close">
-				<img src="images/close.svg" alt="">
-			</div>
-		</div>
-
-		<div class="popup__form">
-			<input type="text" placeholder="Username">
-			<div class="password">
-	<input type="password" id="password-input" placeholder="Password" name="password">
-	<a href="#" class="password-control"></a>
-</div>
-
-<div class="form-footer">
-	<div class="checkbox">
-		
-		<input type="checkbox" id="checkbox" class="custom-checkbox">
-		<label for="checkbox" class="checkbox-label"></label>
-		<label for="checkbox" class="label-text">Remember me</label>
-		
-	</div>
-
-	<a href="">Forgot password?</a>
-	
-</div>
-<input type="submit" class="button form-button" value="Sign In">
-<div class="or">or</div>
-
-<div class="popup__social-items">
-	<a href="" class="popup__social">
-	<img src="images/google.svg" alt="">
-	<div class="popup__social-text">
-		Sign in with Google
-	</div>
-</a>
-
-<a href="" class="popup__social">
-	<img src="images/fb.svg" alt="">
-	<div class="popup__social-text">
-		Sign in with Facebook
-	</div>
-</a>
-</div>
-
-<div class="popup__footer">
-	Dont have an account? <a href="#register" class="sign-up__btn">Sign Up</a>
-</div>
-
-
-		</div>
-
-	</div>
-</div>
-<!-- end login popup -->
-
-
-<!-----start register popup---->
-<div class="popup popup-register" id="register">
-	<div class="popup-content">
-		<div class="logo-reg">
-			<a href="index.html">
-				<img src="images/logo-reg.svg" alt="">
-			</a>
-		</div>
-		<div class="popup-form__header">
-			<div class="popup-title">
-				Registering is easy
-			</div>
-			<div class="close">
-				<img src="images/close.svg" alt="">
-			</div>
-		</div>
-
-		<div class="popup__form">
-			<input type="text" placeholder="Email">
-			<input type="text" placeholder="Full name">
-			<input type="text" placeholder="Phone number">
-			<div class="password">
-	<input type="password" id="password-input" placeholder="Password" name="password">
-	<a href="#" class="password-control"></a>
-</div>
-
-<div class="password">
-	<input type="password" id="password-input" placeholder="Confirm password" name="password">
-	<a href="#" class="password-control"></a>
-</div>
-
-
-<input type="submit" class="button form-button" value="Register">
-<div class="or">or</div>
-
-<div class="popup__social-items">
-	<a href="" class="popup__social">
-	<img src="images/google.svg" alt="">
-	<div class="popup__social-text">
-		Sign in with Google
-	</div>
-</a>
-
-<a href="" class="popup__social">
-	<img src="images/fb.svg" alt="">
-	<div class="popup__social-text">
-		Sign in with Facebook
-	</div>
-</a>
-</div>
-
-<div class="popup__footer">
-	Already have an account? <a href="#login" class="sign-up__btn sign-in__btn">Login</a>
-</div>
-
-
-		</div>
-
-	</div>
-</div>
-<!-- end register popup -->
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>

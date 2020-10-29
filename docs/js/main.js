@@ -1,3 +1,20 @@
+$(function(){
+	$(".tab").click(function() {
+	$(".tab").removeClass("active").eq($(this).index()).addClass("active");
+ 	$(".tab__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+
+$("#top").on("click","a", function (event) {
+       
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+
+	
+});
+
+
 
 $(function(){
 	$(".categories__tab").click(function() {
@@ -8,10 +25,6 @@ $(function(){
 
 
 $(function(){
-
-
-
-
 
 //start search placeholder replace
 if ($(window).width() < 991 ) {
@@ -195,12 +208,7 @@ $("#top").on("click","a", function (event) {
 
 
 
-$(function(){
-	$(".tab").click(function() {
-	$(".tab").removeClass("active").eq($(this).index()).addClass("active");
- 	$(".tab__item").hide().eq($(this).index()).fadeIn()
-}).eq(0).addClass("active");
-});
+
 
 
 
